@@ -20,6 +20,6 @@ urlpatterns = [
     # re_path('admin/', admin.site.urls),
     # re_path('news/', include('news'))
 
-    re_path('admin/', admin.site.urls),
-    re_path('news/',include('news.urls'))
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'',include('news.urls'))
 ]
