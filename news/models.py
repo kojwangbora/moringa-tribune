@@ -1,5 +1,6 @@
 from django.db import models
 import datetime as dt
+from pickle import FALSE, TRUE
 
 # Create your models here.
 class Editor(models.Model):
@@ -31,6 +32,7 @@ class Article(models.Model):
     editor = models.ForeignKey(Editor, on_delete=models.CASCADE)
     tags = models.ManyToManyField(tags)
     pub_date = models.DateTimeField(auto_now_add=True)
+    article_image = models.ImageField(upload_to = 'articles/',null=TRUE)
 
 
     @classmethod
