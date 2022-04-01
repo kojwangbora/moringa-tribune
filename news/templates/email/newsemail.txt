@@ -1,0 +1,4 @@
+Hello {{name}}
+
+<h5>Welcome to the Moringa tribune newsletter. You will find the most exciting news about Moringa School
+</h5>
